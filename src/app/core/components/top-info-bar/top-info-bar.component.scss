@@ -1,0 +1,40 @@
+.top-contact-bar {
+  background: #000A41;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollText 25s linear infinite backwards;
+}
+
+.message {
+  margin-right: 40px;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.top-contact-bar:hover .track {
+  animation-play-state: paused;
+}

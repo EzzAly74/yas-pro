@@ -1,0 +1,41 @@
+.hero-section
+{
+    height: 75vh;
+    background-image: url('./../../../../../../public/images/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 100%;
+    display: flex;
+    justify-content: center;
+    padding-inline: 80px;
+    flex-direction: column;
+    
+    .description
+    {
+        width: 50%;
+
+        
+    h1 
+    {
+        color: #000;
+        text-align: start;
+        font-size: 68px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.6px; /* 105.294% */
+        margin: 0;
+    }
+
+    p 
+    {
+        color: #6A6A6A;
+        text-align: start;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 81.6px; /* 408% */
+        margin: 0;
+    }
+    }
+
+}

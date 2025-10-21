@@ -1,0 +1,26 @@
+@if(config.type == 'button') {
+<button
+  [ngStyle]="{
+    'border-radius': config.radius ? config.radius + 'px' : '0px',
+    'width': config.width ? config.width + 'px' : '100%',
+    'height': config.height ? config.height + 'px' : '100%',
+  }"
+  [ngClass]="config.styleType"
+>
+  <span>{{ config.label }}</span>
+  <div [innerHTML]="safeIcon" class="icon"></div>
+</button>
+} @else if (config.type == 'link') {
+<a
+  [ngClass]="config.styleType"
+  [href]="config.href"
+  [ngStyle]="{
+    'border-radius': config.radius ? config.radius + 'px' : '0px',
+    'width': config.width ? config.width + 'px' : '100%',
+    'height': config.height ? config.height + 'px' : '100%',
+  }"
+>
+  <span>{{ config.label }}</span>
+  <div [innerHTML]="safeIcon" class="icon"></div>
+</a>
+}
