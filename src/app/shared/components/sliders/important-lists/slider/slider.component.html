@@ -1,0 +1,10 @@
+<owl-carousel-o [options]="customOptions">
+  @for (card of cards; track card.id ; let i = $index) {
+  <ng-template carouselSlide>
+    <app-slider-item
+      [card]="card"
+      [ngClass]="{ even: i % 2 === 0, odd: i % 2 !== 0 }"
+    ></app-slider-item>
+  </ng-template>
+  }
+</owl-carousel-o>

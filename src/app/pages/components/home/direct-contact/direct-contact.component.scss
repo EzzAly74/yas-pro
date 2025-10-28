@@ -1,0 +1,101 @@
+.direct-contacts {
+  display: flex;
+  align-items: stretch;
+  gap: 150px;
+  justify-content: center;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.image-container {
+  height: 350px;
+  width:  285px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.contact-person img {
+    width: 100%;
+    object-fit: contain;
+    background-color: #F9BEBA;
+    clip-path: path("M0 25.7478L13.9741 21.0678C102.405 -8.54825 198.324 -6.89609 285.682 25.7478V326.698C196.692 306.42 104.397 305.377 14.9712 323.641L0 326.698V25.7478Z");
+}
+
+/* second shape */
+.contact-person.peach
+{
+    .image-container
+    {
+        height: 380px;
+    }
+    img {
+        background-color:#FEDDC0;
+        clip-path: path("M0 0L21.1581 9.06335C106.293 45.5319 203.243 42.2101 285.682 0V300.95C205.731 353.982 102.893 358.049 19.0036 311.496L0 300.95V0Z");
+    }
+    
+}
+.contact-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 
+    {
+        margin: 0 ;
+        color: #000;
+        text-align: center;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 71.6px; /* 170.476% */
+    }
+    p
+    {
+        margin: 0 ;
+        color: #3E54D3;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 71.6px; /* 223.75% */
+    }
+}
+.contact-info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    .contact-whatsapp
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+
+        span 
+        {
+            color: #000;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 27px */
+        }
+    }
+    .social 
+    {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}

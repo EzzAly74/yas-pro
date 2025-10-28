@@ -18,6 +18,7 @@ export class RegularBtnComponent {
     styleType: string;
     width?: number;
     height?: number;
+    fullWidth?: boolean;
   };
   safeIcon: SafeHtml | null = null;
 

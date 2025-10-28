@@ -1,0 +1,157 @@
+
+
+
+:host {
+  display: block;        /* مهم عشان الخلفية تبان */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.card-container
+    {
+    border-radius: 22px;
+    height: 500px;
+    padding: 32px;  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    .card-header
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .number
+            {
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 72px; /* 100% */
+                letter-spacing: -5.76px;
+            }
+        }
+        .card-body
+        {
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .title
+            {
+                font-size: 50.764px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 50.764px; /* 100% */
+                letter-spacing: -2.031px;
+            }
+            .description
+            {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34.8px; /* 174% */
+            }
+        }
+        .card-footer
+        {
+            margin-top: 30px;
+            a 
+            {
+            display: flex;
+            padding: 8px 12px;
+            justify-content: center;
+            width: 233px;
+            height: 51px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+
+            span 
+            {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            }
+        }
+    }
+
+/* ستايلات للحالات */
+:host(.even) {
+  .card-container
+    {
+        background-color: #F5F5F5;
+        .number
+        {
+            color: #000;
+        }
+        .title 
+        {
+            color: #222;
+        }
+        .description
+        {
+            color: #6A6A6A;
+        }
+        .card-footer
+        {
+            a 
+            {
+                background: #3E54D3;
+                span 
+                {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+:host(.odd) {
+    .card-container
+    {
+        background: #3946F2;
+
+          .number , .title, .description
+        {
+            color: #fff;
+        }
+        .card-header
+        {
+            .icon 
+            {
+                svg 
+                {
+                    path 
+                    {
+                        fill: #fff
+                    }
+                }
+            }
+        }
+         .card-footer
+         {
+            a 
+            {
+                background: #FFF;
+
+                span 
+                {
+                    color: #000;
+                }
+
+                svg
+                {
+                    path 
+                    {
+                        fill: #000;
+                        stroke: #000;
+                    }
+                }
+            }
+         }
+    }
+}

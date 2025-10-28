@@ -2,7 +2,7 @@
 <button
   [ngStyle]="{
     'border-radius': config.radius ? config.radius + 'px' : '0px',
-    'width': config.width ? config.width + 'px' : '100%',
+    'width': config.fullWidth? '100%' :  config.width? config.width + 'px' : '100%',
     'height': config.height ? config.height + 'px' : '100%',
   }"
   [ngClass]="config.styleType"

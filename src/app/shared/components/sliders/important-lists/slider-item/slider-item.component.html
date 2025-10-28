@@ -1,0 +1,53 @@
+<div class="card-container">
+  <div class="card-header">
+    <div class="number">
+      {{ card.number }}
+    </div>
+    <div class="icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="41"
+        height="41"
+        viewBox="0 0 41 41"
+        fill="none"
+      >
+        <path
+          d="M40.1211 3C40.1211 1.34315 38.7779 1.21639e-06 37.1211 1.80645e-06L10.1211 1.20573e-07C8.46424 1.20573e-07 7.12109 1.34315 7.12109 3C7.12109 4.65686 8.46424 6 10.1211 6H34.1211V30C34.1211 31.6569 35.4642 33 37.1211 33C38.7779 33 40.1211 31.6569 40.1211 30L40.1211 3ZM2.12109 38L4.24241 40.1213L39.2424 5.12132L37.1211 3L34.9998 0.87868L-0.000226557 35.8787L2.12109 38Z"
+          fill="black"
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div class="card-details">
+    <div class="card-body">
+      <div class="title">
+        {{ card.title }}
+      </div>
+      <div class="description">
+        {{ card.description }}
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <a [href]="card.link.href">
+        <span>{{ card.link.label }}</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <path
+            d="M15 8H1M1 8L8 15M1 8L8 1"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

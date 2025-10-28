@@ -1,0 +1,42 @@
+.important-lists-wrapper
+{
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    .section-text
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column  ;
+
+        h2 
+        {
+            margin: 0;
+            color: #000;
+            text-align: center;
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 71.6px; /* 137.692% */
+        }
+        p 
+        {
+            margin: 0 ;
+            color: #6A6A6A;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 81.6px; /* 408% */
+        }
+    }
+
+    .slider-wrapper 
+    {
+        width: 100%;
+    }
+}
