@@ -16,6 +16,14 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+
+    @media(max-width: 992px)
+    {
+        & 
+        {
+            height: 350px;
+        }
+    }
     .card-header
         {
             display: flex;
