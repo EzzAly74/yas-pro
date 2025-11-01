@@ -32,15 +32,39 @@
         padding: 120px 60px;
         gap: 40px;
 
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                padding: 16px;
+                flex-direction: column;
+            }
+        }
+
         & > div 
         {
             width: 50%;
+             @media(max-width: 992px)
+        {
+            & 
+            {
+                width: 100%;
+            }
+        }
         }
         .stores-container
         {
             display: flex;
             align-items: center;
             gap: 16px;
+
+            @media(max-width: 992px)
+            {
+                &
+                {
+                    display: none;
+                }
+            }
 
             .store-container
             {
@@ -107,6 +131,15 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: 60.07px; /* 123.448% */
+
+                    @media(max-width: 992px)
+                    {
+                        & 
+                        {
+                            font-size: 24px;
+                            line-height: 26px;
+                        }
+                    }
                 }
             }
         }
@@ -122,6 +155,14 @@
             border-radius: 32px;
             border: 1px solid var(--Grey-6, #EEE);
             background: var(--Grey, #FBFBFB);
+
+            @media(max-width: 992px)
+            {
+                & 
+                {
+                    padding: 20px;
+                }
+            }
 
             form 
             {

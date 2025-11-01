@@ -9,6 +9,7 @@ button , a
     outline: none;
     border: none;
     cursor: pointer;
+    max-width: 100% !important;
 
     &.regular 
     {
@@ -20,6 +21,14 @@ button , a
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+
+            @media(max-width: 992px)
+            {
+                & 
+                {
+                    font-size: 14px;
+                }
+            }
         }
     }
      &.outline 

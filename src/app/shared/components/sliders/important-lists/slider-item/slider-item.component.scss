@@ -22,6 +22,18 @@
             align-items: center;
             justify-content: space-between;
 
+            @media(max-width: 992px)
+            {
+                .icon 
+                {
+                    svg
+                    {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
             .number
             {
                 font-size: 72px;
@@ -29,6 +41,15 @@
                 font-weight: 400;
                 line-height: 72px; /* 100% */
                 letter-spacing: -5.76px;
+                @media(max-width: 992px)
+                {
+                    &
+                    {
+                        font-size: 28px;
+                        line-height: 27.759px; /* 100% */
+                        letter-spacing: -2.221px;
+                    }
+                }
             }
         }
         .card-body
@@ -44,6 +65,15 @@
                 font-weight: 400;
                 line-height: 50.764px; /* 100% */
                 letter-spacing: -2.031px;
+                  @media(max-width: 992px)
+                {
+                    &
+                    {
+                        font-size: 18px;
+                        line-height: 20px; /* 100% */
+                        letter-spacing: 2px;
+                    }
+                }
             }
             .description
             {
@@ -51,6 +81,14 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 34.8px; /* 174% */
+                  @media(max-width: 992px)
+                {
+                    &
+                    {
+                        font-size: 12px;
+                        line-height: 14px; /* 100% */
+                    }
+                }
             }
         }
         .card-footer
@@ -67,6 +105,7 @@
             gap: 10px;
             border-radius: 10px;
             text-decoration: none;
+            max-width: 100%;
 
             span 
             {
@@ -74,6 +113,14 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+
+                @media(max-width: 992px)
+                {
+                    & 
+                    {
+                        font-size: 12px;
+                    }
+                }
             }
             }
         }

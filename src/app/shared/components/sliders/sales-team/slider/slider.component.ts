@@ -5,17 +5,19 @@ import {
   CarouselComponent,
 } from 'ngx-owl-carousel-o';
 import { SliderItemComponent } from '../slider-item/slider-item.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [CarouselModule, SliderItemComponent],
+  imports: [CarouselModule, SliderItemComponent, CommonModule],
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.scss'],
 })
 export class SliderComponent {
   @ViewChild(CarouselComponent, { static: false })
   owlCarousel!: CarouselComponent;
+  isMobile: boolean = false;
 
   @Input() cards!: {
     id: number;
@@ -45,11 +47,11 @@ export class SliderComponent {
     rtl: true,
     margin: 24,
     dots: false,
-    nav: false, // 🚫 no default nav buttons
+    nav: false,
     navSpeed: 700,
     responsive: {
-      0: { items: 1.5 },
-      400: { items: 2.5 },
+      0: { items: 1.5, center: false },
+      400: { items: 2.5, center: false },
       740: { items: 3.5 },
       940: { items: 4.5 },
     },

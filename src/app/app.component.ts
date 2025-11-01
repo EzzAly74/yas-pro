@@ -9,6 +9,7 @@ import { ContactUsComponent } from './pages/components/home/contact-us/contact-u
 import { ImportantListsComponent } from './pages/components/home/important-lists/important-lists.component';
 import { OurStoresComponent } from './pages/components/home/our-stores/our-stores.component';
 import { FooterComponent } from './core/components/footer/footer.component';
+import { WhatsAppIconComponent } from './core/components/whats-app-icon/whats-app-icon.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { FooterComponent } from './core/components/footer/footer.component';
     ImportantListsComponent,
     OurStoresComponent,
     FooterComponent,
+    WhatsAppIconComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

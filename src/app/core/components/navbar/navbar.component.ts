@@ -3,18 +3,25 @@ import { RegularBtnComponent } from '../../../shared/components/buttons/regular-
 
 @Component({
   selector: 'app-navbar',
+  standalone: true,
   imports: [RegularBtnComponent],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   browseBtn = {
     type: 'link',
     label: 'تصفح منتجاتنا',
     icon: `
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M16.0004 9V6C16.0004 3.79086 14.2095 2 12.0004 2C9.79123 2 8.00037 3.79086 8.00037 6V9M3.59237 10.352L2.99237 16.752C2.82178 18.5717 2.73648 19.4815 3.03842 20.1843C3.30367 20.8016 3.76849 21.3121 4.35839 21.6338C5.0299 22 5.94374 22 7.77142 22H16.2293C18.057 22 18.9708 22 19.6423 21.6338C20.2322 21.3121 20.6971 20.8016 20.9623 20.1843C21.2643 19.4815 21.179 18.5717 21.0084 16.752L20.4084 10.352C20.2643 8.81535 20.1923 8.04704 19.8467 7.46616C19.5424 6.95458 19.0927 6.54511 18.555 6.28984C17.9444 6 17.1727 6 15.6293 6L8.37142 6C6.82806 6 6.05638 6 5.44579 6.28984C4.90803 6.54511 4.45838 6.95458 4.15403 7.46616C3.80846 8.04704 3.73643 8.81534 3.59237 10.352Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+        <path d="M16 9V6C16 3.79 14.21 2 12 2C9.79 2 8 3.79 8 6V9M3.6 10.35L3 16.75C2.82 18.57 2.74 19.48 3.04 20.18C3.3 20.8 3.77 21.31 4.36 21.63C5.03 22 5.94 22 7.77 22H16.23C18.06 22 18.97 22 19.64 21.63C20.23 21.31 20.7 20.8 20.96 20.18C21.26 19.48 21.18 18.57 21.01 16.75L20.41 10.35C20.26 8.82 20.19 8.05 19.85 7.47C19.54 6.95 19.09 6.55 18.55 6.29C17.94 6 17.17 6 15.63 6H8.37C6.83 6 6.06 6 5.45 6.29C4.91 6.55 4.46 6.95 4.15 7.47C3.81 8.05 3.74 8.82 3.6 10.35Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     `,
     radius: 20,
     href: 'https://www.google.com',

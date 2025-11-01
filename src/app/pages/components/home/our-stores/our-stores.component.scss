@@ -2,8 +2,26 @@
 {
     padding: 60px 120px;
 
+    @media(max-width: 992px)
+    {
+        & 
+        {
+            padding: 24px;
+        }
+    }
+
     .head-title
     {
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                    display: flex ;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+            }
+        }
         h2 
         {
             color: #000;
@@ -15,6 +33,14 @@
             margin: 0;
             padding-inline-start: 3rem;
             width: fit-content;
+
+             @media(max-width: 992px)
+        {
+            & 
+            {
+                padding-inline-start: 0;
+            }
+        }
         }
     }
 
@@ -27,6 +53,14 @@
         justify-content: space-between;
         gap: 32px;
         margin-top: 48px;
+
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                flex-direction: column;
+            }
+        }
 
         .store-container
         {

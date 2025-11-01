@@ -5,6 +5,15 @@
     display: flex;
     justify-content: space-around;
     gap: 40px;
+
+    @media(max-width: 992px)
+    {
+        & 
+        {
+            padding: 24px;
+            flex-direction: column;
+        }
+    }
     
 
     
@@ -17,6 +26,16 @@
         align-items: stretch;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                width: 100%;
+                align-items: start;
+                gap: 32px;
+            }
+        }
 
         .logo-text 
         {
@@ -49,6 +68,14 @@
         flex-direction: column;
         gap: 56px;
         align-items: center;
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                width: 100%;
+                align-items: start;
+            }
+        }
 
         & > div 
         {
@@ -100,6 +127,13 @@
         align-items: stretch;
         justify-content: space-between;
         gap: 56px;
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                width: 100%;
+            }
+        }
 
         & > h4 
         {

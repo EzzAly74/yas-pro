@@ -10,10 +10,32 @@
     padding-inline: 80px;
     flex-direction: column;
     gap: 32px;
+
+    @media(max-width:768px)
+    {
+        &
+        {
+            background-image: url('./../../../../../../public/images/hero-mob.png');
+            padding: 10%;
+            justify-content: start;
+        }
+    }
     
     .description
     {
         width: 50%;
+
+        @media(max-width:992px)
+        {
+            &
+            {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: center;
+            }
+        }
 
         
     h1 
@@ -25,6 +47,15 @@
         font-weight: 700;
         line-height: 71.6px; /* 105.294% */
         margin: 0;
+
+        @media(max-width:992px)
+        {
+            &
+            {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
     }
 
     p 
@@ -36,19 +67,35 @@
         font-weight: 500;
         line-height: 81.6px; /* 408% */
         margin: 0;
+        @media(max-width:992px)
+        {
+            &
+            {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
     }
     }
-    .whats-app-icon
+    
+    .actions
     {
-        width: 60px;
-        height: 60px;
-        background-color: #54E24F;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
+        display: none;
     }
 
+    @media(max-width:768px)
+    {
+        .action
+        {
+            display: none;
+        }
+           .actions
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+    }
 
 }

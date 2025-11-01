@@ -3,6 +3,16 @@
   align-items: stretch;
   gap: 150px;
   justify-content: center;
+
+  @media(max-width: 992px)
+  {
+    &
+    {
+        gap: 16px;
+        padding: 40px;
+        padding-inline: 16px;
+    }
+  }
 }
 
 .contact-person {
@@ -56,6 +66,14 @@
         font-style: normal;
         font-weight: 700;
         line-height: 71.6px; /* 170.476% */
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
     }
     p
     {
@@ -66,6 +84,15 @@
         font-style: normal;
         font-weight: 500;
         line-height: 71.6px; /* 223.75% */
+
+        @media(max-width: 992px)
+        {
+            & 
+            {
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
     }
 }
 .contact-info
@@ -90,6 +117,14 @@
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 27px */
+
+            @media(max-width: 992px)
+            {
+                & 
+                {
+                    font-size: 12px;
+                }
+            }
         }
     }
     .social 

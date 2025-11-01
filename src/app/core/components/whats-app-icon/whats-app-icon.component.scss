@@ -1,0 +1,15 @@
+.whats-app-icon a
+    {
+        width: 60px;
+        height: 60px;
+        background-color: #54E24F;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 99;
+    }

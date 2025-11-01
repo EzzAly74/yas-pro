@@ -31,12 +31,12 @@ export class SliderComponent {
     touchDrag: true,
     pullDrag: true,
     rtl: true,
-    margin: 48,
+    margin: 24,
     dots: false,
     nav: false, // 🚫 no default nav buttons
     navSpeed: 700,
     responsive: {
-      0: { items: 1 },
+      0: { items: 1.25, loop: true },
       740: { items: 2 },
       940: { items: 3 },
     },

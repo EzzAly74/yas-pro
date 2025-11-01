@@ -32,6 +32,15 @@
     />
   </svg>
 </div>
-<div class="slider">
+<div class="slider" *ngIf="!isMobile; else gridCollection">
   <app-slider [cards]="cards"></app-slider>
 </div>
+<ng-template #gridCollection>
+  <div class="grid-collection-mobile">
+    <div class="items-container">
+      <div class="item-container" *ngFor="let card of cards">
+        <app-slider-item [card]="card"></app-slider-item>
+      </div>
+    </div>
+  </div>
+</ng-template>

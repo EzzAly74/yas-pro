@@ -1,13 +1,21 @@
-import { Component, ChangeDetectorRef, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ChangeDetectorRef,
+  AfterViewInit,
+  HostListener,
+} from '@angular/core';
 import { SliderComponent } from '../../../../shared/components/sliders/sales-team/slider/slider.component';
+import { CommonModule } from '@angular/common';
+import { SliderItemComponent } from '../../../../shared/components/sliders/sales-team/slider-item/slider-item.component';
 
 @Component({
   selector: 'app-sales-team',
-  imports: [SliderComponent],
+  imports: [SliderComponent, CommonModule, SliderItemComponent],
   templateUrl: './sales-team.component.html',
   styleUrl: './sales-team.component.scss',
 })
 export class SalesTeamComponent {
+  isMobile: boolean = false;
   cards: any[] = [
     {
       id: 1,
@@ -105,4 +113,20 @@ export class SalesTeamComponent {
       },
     },
   ];
+
+  constructor(private cdr: ChangeDetectorRef) {}
+
+  ngOnInit(): void {
+    this.checkIsMobile();
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.checkIsMobile();
+  }
+
+  private checkIsMobile(): void {
+    this.isMobile = window.innerWidth <= 768; // threshold for mobile view
+    this.cdr.detectChanges(); // ensure Angular updates the view
+  }
 }
