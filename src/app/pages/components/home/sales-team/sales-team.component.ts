@@ -26,7 +26,7 @@ export class SalesTeamComponent {
       },
       name: 'عثمان احمد',
       position: 'فريق المبيعات',
-      phone: '1155300800',
+      phone: '01155300800',
       bgColor: '#FEBDB8',
       social: {
         facebook: 'https://www.facebook.com/share/14MGPsZRvBk/?mibextid=wwXIfr',
@@ -35,7 +35,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro.catalog.to/',
-        whatsapp: 'https://wa.me/1155300800/',
+        whatsapp: 'https://wa.me/01155300800/',
       },
     },
     {
@@ -56,7 +56,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro101.catalog.to',
-        whatsapp: 'https://wa.me/1155300800/',
+        whatsapp: 'https://wa.me/01113000950/',
       },
     },
     {
@@ -98,7 +98,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro106.catalog.to',
-        whatsapp: '01142600006',
+        whatsapp: 'https://wa.me/01142600006',
       },
     },
     {
