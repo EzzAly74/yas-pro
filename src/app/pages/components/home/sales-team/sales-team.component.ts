@@ -35,7 +35,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro.catalog.to/',
-        whatsapp: 'https://wa.me/01155300800/',
+        whatsapp: 'https://wa.me/+201155300800/',
       },
     },
     {
@@ -56,7 +56,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro101.catalog.to',
-        whatsapp: 'https://wa.me/01113000950/',
+        whatsapp: 'https://wa.me/+201113000950/',
       },
     },
     {
@@ -77,7 +77,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro104.catalog.to',
-        whatsapp: 'https://wa.me/01119144460/',
+        whatsapp: 'https://wa.me/+201119144460/',
       },
     },
     {
@@ -98,7 +98,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro106.catalog.to',
-        whatsapp: 'https://wa.me/01142600006',
+        whatsapp: 'https://wa.me/+201142600006',
       },
     },
     {
@@ -119,7 +119,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro102.catalog.to',
-        whatsapp: 'https://wa.me/01155337773',
+        whatsapp: 'https://wa.me/+201155337773',
       },
     },
     {
@@ -140,7 +140,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro103.catalog.to',
-        whatsapp: 'https://wa.me/01102296664/',
+        whatsapp: 'https://wa.me/+201102296664/',
       },
     },
     {
@@ -161,7 +161,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro105.catalog.to',
-        whatsapp: 'https://wa.me/01148007300',
+        whatsapp: 'https://wa.me/+201148007300',
       },
     },
     {
@@ -182,7 +182,7 @@ export class SalesTeamComponent {
         instagram:
           'https://www.instagram.com/mobilepro2022?igsh=MTU0MmszMzBxMGRuYg==',
         contact: 'https://mobilepro107.catalog.to',
-        whatsapp: 'https://wa.me/01156428000',
+        whatsapp: 'https://wa.me/+201156428000',
       },
     },
   ];
