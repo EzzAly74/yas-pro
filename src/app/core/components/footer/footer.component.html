@@ -108,7 +108,10 @@
         <div class="store-container" *ngFor="let store of stores">
           <h6>{{ store.name }}</h6>
           <p>{{ store.address }}</p>
-          <a [href]="'tel:'.concat(store.phone)">
+          <a
+            [href]="'tel:'.concat(store.phone)"
+            [ngStyle]="{ visibility: store.phone ? 'visible' : 'hidden' }"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"

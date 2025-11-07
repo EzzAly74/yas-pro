@@ -17,7 +17,7 @@ export class HeroComponent {
       </svg>
     `,
     radius: 3,
-    href: 'https://www.google.com',
+    href: 'https://mobilepro.catalog.to/',
     styleType: 'regular',
     width: 233,
     height: 51,
@@ -28,7 +28,7 @@ export class HeroComponent {
     type: 'link',
     label: 'تطبيق التوافيق',
     radius: 3,
-    href: 'https://www.google.com',
+    href: 'https://oohi.yasbas.pro',
     styleType: 'outline',
     width: 233,
     height: 51,

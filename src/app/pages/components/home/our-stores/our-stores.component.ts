@@ -17,8 +17,8 @@ export class OurStoresComponent {
       },
       name: 'العتبة',
       address: 'أول شارع ممتاز من ناحية شارع العطار محل (موبايل برو)',
-      phone: '0223921797',
-      location: 'https://www.google.com/maps?q=30.045915,31.243917',
+      phone: '01155300800',
+      location: 'https://maps.app.goo.gl/WmybbTBK1coohGUq6?g_st=aw',
     },
     {
       image: {
@@ -29,8 +29,8 @@ export class OurStoresComponent {
       name: 'أسيوط',
       address:
         'المحطة - المركز التجاري الدولي الدور الأول أمام مطعم الناحل محل (موبايل برو)',
-      phone: '0223921797',
-      location: 'https://www.google.com/maps?q=30.045915,31.243917',
+      phone: '01140043370',
+      location: 'https://maps.google.com/?q=27.179583,31.186480',
     },
     {
       image: {
@@ -41,8 +41,8 @@ export class OurStoresComponent {
       name: 'الإدارة والمخازن',
       address:
         'المقطم - الهضبة الوسطى الحي الأول - قطعة 1845 بالقرب من شارع مدرسة البارون',
-      phone: '0223921797',
-      location: 'https://www.google.com/maps?q=30.045915,31.243917',
+      phone: '',
+      location: 'https://maps.google.com/?q=30.006973,31.280802',
     },
   ];
 }

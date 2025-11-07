@@ -32,6 +32,7 @@ export class SliderComponent {
       tiktok: string;
       instagram: string;
       contact: string;
+      whatsapp: string;
     };
   }[];
 

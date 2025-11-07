@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { FileUpload, FileUploadModule } from 'primeng/fileupload';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
@@ -30,6 +36,8 @@ export interface ServiceType {
     ToastModule,
     CommonModule,
     RegularBtnComponent,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
@@ -38,6 +46,7 @@ export class ContactUsComponent {
   serviceTypes: ServiceType[] = [];
 
   selectedServiceType?: ServiceType;
+  contactUsForm!: FormGroup;
   submitBtn = {
     type: 'button',
     label: 'ارسل الرساله',
@@ -48,12 +57,16 @@ export class ContactUsComponent {
     fullWidth: true,
   };
 
+  constructor(private fb: FormBuilder) {}
+
   ngOnInit() {
     this.serviceTypes = [
       { name: 'شكوى', id: 1 },
       { name: 'اقتراح', id: 2 },
       { name: 'شريك معنا', id: 3 },
     ];
+
+    this.initForm();
   }
   openFileDialog(uploader: FileUpload) {
     const fileInput = uploader.el.nativeElement.querySelector(
@@ -63,5 +76,17 @@ export class ContactUsComponent {
   }
   onUpload(event: any) {
     console.log('Files uploaded:', event.files);
+  }
+  initForm() {
+    this.contactUsForm = this.fb.group({
+      name: [null, Validators.required],
+      phone: [null, Validators.required],
+      serviceType: [null, Validators.required],
+      message: [null, Validators.required],
+      file: [null],
+    });
+  }
+  submitForm(form: FormGroup) {
+    console.log(form);
   }
 }

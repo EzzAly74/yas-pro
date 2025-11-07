@@ -16,7 +16,7 @@ export class ImportantListsComponent {
       description: 'دلوقت تقدر توصل لارقام فودافون كاش الحقيقيه من هنا!',
       link: {
         label: 'قائمه ارقام فودافون كاش',
-        href: '',
+        href: 'https://docs.google.com/spreadsheets/d/1V5qZcb_pbv8yX8kVh7rE2Iz4Rby4UyxbuiKRRfVz0iA/edit?usp=sharing',
       },
     },
     {
@@ -26,7 +26,7 @@ export class ImportantListsComponent {
       description: 'دلوقت تقدر توصل لقوائم اسعار البطاريات أول بأول من هنا',
       link: {
         label: 'قائمه اسعار البطاريات',
-        href: '',
+        href: 'https://docs.google.com/spreadsheets/d/1TIKXHqHU3IE7n3CkdxMGUzAgWsIDaovCtYMb-BXZfnc/edit?usp=sharing',
       },
     },
     {
@@ -37,7 +37,7 @@ export class ImportantListsComponent {
         'دلوقت تقدر توصل لقائمة اسعار الكهرباء المحدثه أول باول من هنا!',
       link: {
         label: 'قائمه اسعار الكهرباء',
-        href: '',
+        href: 'https://docs.google.com/spreadsheets/d/1tit8DQuxwjWxrtZIgZ5RtYqqZ4cmabhYuiRUF0zZiWs/edit?usp=sharing',
       },
     },
     {
@@ -46,8 +46,8 @@ export class ImportantListsComponent {
       title: 'سجل نواقص السوق',
       description: 'دلوقت تقدر تسجل نواقصك من هنا بكل سهوله',
       link: {
-        label: 'قائمه اسعار البطاريات',
-        href: '',
+        label: 'قائمه نواقص السوق',
+        href: 'https://forms.gle/Nv6LGyGNGx4apWN3A',
       },
     },
     {
@@ -58,7 +58,7 @@ export class ImportantListsComponent {
         'دلوقت تقدر توصل لقائمة اسعار الاسكرينات المحدثه أول باول من هنا!',
       link: {
         label: 'قائمه اسعار الاسكرينات',
-        href: '',
+        href: 'https://docs.google.com/spreadsheets/d/1L7_6DCAzuBo-3qrrDz5EAmxh2GA9nV96DOY1QKovOO8/edit?usp=sharing',
       },
     },
   ];

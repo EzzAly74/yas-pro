@@ -25,6 +25,7 @@ export class SliderItemComponent {
       tiktok: string;
       instagram: string;
       contact: string;
+      whatsapp: string;
     };
   };
 }
