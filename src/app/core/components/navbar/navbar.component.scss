@@ -9,7 +9,12 @@
   position: relative;
   z-index: 1000;
 
-
+  .logo 
+  {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 
   .logo img {
     max-height: 60px;
@@ -32,14 +37,15 @@
       margin: 0;
       padding: 0;
 
-      li {
+      li , li a {
         color: #000;
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
         transition: color 0.3s ease;
+        text-decoration: none;
 
-        &:hover {
+        &:hover , &.active {
           color: #007bff;
         }
       }
@@ -168,3 +174,25 @@
       }
     }
     }
+.logo-text
+{
+  display: none;
+
+  @media(max-width: 768px)
+  {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+
+  p ,span
+  {
+    color: #000;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 7.8px */
+  }
+  }
+ 
+}

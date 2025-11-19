@@ -12,12 +12,24 @@
   <div class="menu-wrapper" [class.active]="isMenuOpen">
     <div class="menu-items">
       <ul>
-        <li><a>الصفحة الرئيسية</a></li>
-        <li><a>منتجاتنا</a></li>
-        <li><a>البراندات</a></li>
-        <li><a>اخر الأخبار</a></li>
-        <li><a>عنا</a></li>
-        <li><a>تواصل معنا</a></li>
+        <li>
+          <a [routerLink]="'home'" [routerLinkActive]="'active'"
+            >الصفحة الرئيسية</a
+          >
+        </li>
+        <!-- <li><a>منتجاتنا</a></li> -->
+        <!-- <li><a>البراندات</a></li> -->
+        <li>
+          <a [routerLink]="'news'" [routerLinkActive]="'active'">اخر الأخبار</a>
+        </li>
+        <li>
+          <a [routerLink]="'about-us'" [routerLinkActive]="'active'">عنا</a>
+        </li>
+        <li>
+          <a [routerLink]="'contact'" [routerLinkActive]="'active'"
+            >تواصل معنا</a
+          >
+        </li>
       </ul>
     </div>
   </div>

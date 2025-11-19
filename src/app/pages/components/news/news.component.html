@@ -1,0 +1,30 @@
+<div class="news">
+    <section class="black-friday">
+        <app-black-friday></app-black-friday>
+    </section>
+    <section class="branches-gallary">
+        <h4>إطلاق الفرع العشرين في مصر</h4>
+        <div class="gallary">
+            <div class="big-pic">
+                <img src="assets/images/pages/news/Placeholder.png" alt="branch">
+                <div class="caption">
+                    <h5>Launching our 20th branch</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                </div>
+            </div>
+            <div class="pics">
+                @for (pic of [1,2,3,4]; track $index) {
+                <img [src]="`assets/images/pages/news/${pic}.png`" alt="">
+                }
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="black-friday">
+        <app-black-friday></app-black-friday>
+    </section>
+
+</div>

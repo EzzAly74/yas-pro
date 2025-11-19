@@ -1,0 +1,15 @@
+<div class="contacts">
+    <div class="header">
+        <h5>هل تفضل المحادثه؟</h5>
+        <p>لا تتردد في الدردشة معنا مباشرة على واتساب أو الانضمام إلى مجموعتنا! يمكنك أيضًا الاتصال بمنصات مختلفة لتسهيل
+            التواصل.</p>
+    </div>
+    <div class="contacts-info">
+        @for (contact of contactsInfo; track $index) {
+        <app-contacts-card [contactInfo]="contact"></app-contacts-card>
+        }
+
+    </div>
+    <!-- <img src="../../../../public/assets/images/pages/contacts/whatsapp.png" alt="">
+    <img src="../../../../public/assets/images/pages/contacts/telegram.png" alt=""> -->
+</div>

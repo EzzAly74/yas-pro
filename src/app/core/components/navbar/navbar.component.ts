@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RegularBtnComponent } from '../../../shared/components/buttons/regular-btn/regular-btn.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RegularBtnComponent],
+  imports: [RegularBtnComponent, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })

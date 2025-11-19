@@ -9,7 +9,16 @@
   </div>
 
   <div class="actions">
-    <app-regular-btn [config]="browseBtn"></app-regular-btn>
-    <app-regular-btn [config]="combBtn"></app-regular-btn>
+    <app-regular-btn
+      style="width: 100%"
+      [config]="browseBtnMob"
+    ></app-regular-btn>
+    <div class="cont">
+      <app-regular-btn
+        style="width: 100%"
+        [config]="shareBtn"
+      ></app-regular-btn>
+      <app-regular-btn style="width: 100%" [config]="combBtn"></app-regular-btn>
+    </div>
   </div>
 </div>

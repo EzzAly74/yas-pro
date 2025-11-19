@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SliderComponent } from '../../../../shared/components/sliders/important-lists/slider/slider.component';
+import { RegularBtnComponent } from '../../../../shared/components/buttons/regular-btn/regular-btn.component';
 
 @Component({
   selector: 'app-important-lists',
-  imports: [SliderComponent],
+  imports: [SliderComponent, RegularBtnComponent],
   templateUrl: './important-lists.component.html',
   styleUrl: './important-lists.component.scss',
 })
@@ -62,4 +63,24 @@ export class ImportantListsComponent {
       },
     },
   ];
+
+  shortRec = {
+    type: 'link',
+    label: 'سجل نواقصك',
+    radius: 10,
+    href: 'https://forms.gle/Nv6LGyGNGx4apWN3A',
+    styleType: 'regular',
+    width: 233,
+    height: 51,
+  };
+
+  numbers = {
+    type: 'link',
+    label: 'ارقام المحافظ وحسابات البنوك',
+    radius: 10,
+    href: 'https://docs.google.com/spreadsheets/d/1V5qZcb_pbv8yX8kVh7rE2Iz4Rby4UyxbuiKRRfVz0iA/edit?usp=sharing',
+    styleType: 'regular',
+    width: 233,
+    height: 51,
+  };
 }

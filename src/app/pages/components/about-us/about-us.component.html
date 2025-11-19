@@ -1,0 +1,78 @@
+<div class="about">
+  <section class="hero">
+    <div class="media">
+      <img
+        src="assets/images/pages/about/Rectangle 12.jpg"
+        alt="about-us-hero"
+        srcset=""
+      />
+    </div>
+    <div class="caption">
+      <h2>موبايل برو رقم ١ في اكسسوارات المحمول في مصر</h2>
+      <p>شريك قلبه عليك</p>
+    </div>
+  </section>
+  <div class="taking">
+    <p>
+      في ياس باس برو، نحن متخصصون في تقديم ملحقات الهواتف المحمولة عالية الجودة
+      المصممة لتلبية احتياجات الأعمال. تشمل مجموعتنا الواسعة كل شيء من الأغطية
+      الواقية إلى حلول الشحن، المصممة لتعزيز وظيفة وجاذبية الأجهزة المحمولة. نحن
+      ملتزمون بتقديم منتجات مبتكرة تلبي متطلبات الشركات، مما يضمن الموثوقية
+      والأناقة في كل ملحق. تعاون معنا لرفع مستوى عروضك المحمولة وتلبية احتياجات
+      عملائك.
+    </p>
+  </div>
+  <section class="analysises">
+    @for (report of ourReports; track $index) {
+    <div class="analysis">
+      <h3>{{ report.value }}</h3>
+      <p>{{ report.title }}</p>
+    </div>
+    }
+  </section>
+  <section class="responsability">
+    <app-our-vision
+      [info]="{
+        dir: 'ltr',
+        imageUrl: 'assets/images/pages/about/Rectangle 12.jpg',
+        title: 'مهمتنا',
+        caption: 'نبني على الثقة، وندفع بالنتائج',
+        taking:
+          'تقديم منتجات مبتكرة تلبي احتياجات الأعمال، مع ضمان الموثوقية والأناقة في كل ملحق. تعاون معنا لرفع مستوى عروضك المحمولة وتلبية احتياجات عملائك.'
+      }"
+    ></app-our-vision>
+  </section>
+  <section class="vision">
+    <app-our-vision
+      [info]="{
+        dir: 'rtl',
+        imageUrl: 'assets/images/pages/about/Rectangle 11.png',
+        title: 'رؤيتنا',
+        caption: 'تبسيط ملحقات الهواتف المحمولة عالية الجودة',
+        taking:
+          'تقديم منتجات مبتكرة تلبي احتياجات الأعمال، مع ضمان الموثوقية والأناقة في كل ملحق. تعاون معنا لرفع مستوى عروضك المحمولة وتلبية احتياجات عملائك.'
+      }"
+    ></app-our-vision>
+  </section>
+  <section class="Apart">
+    <div class="title">
+      <p>Company Values</p>
+      <h4>ما يميزنا؟</h4>
+    </div>
+    <div class="cards" dir="rtl">
+      @for (apart of aparts; track $index) {
+      <app-apart-card [apartData]="apart"></app-apart-card>
+      }
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="actions">
+      <button type="button">
+        <span>احجز مكالمة</span>
+        <i class="pi pi-phone"></i>
+      </button>
+      <button type="button">اتصل بالمبيعات</button>
+    </div>
+    <p>لنبدأ معا الان</p>
+  </section>
+</div>

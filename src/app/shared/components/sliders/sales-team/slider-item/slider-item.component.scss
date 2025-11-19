@@ -14,6 +14,8 @@
         img 
         {
             max-width: 100%;
+            height: 200px;
+            object-fit: contain;
         }
     }
     .card-info 
@@ -70,6 +72,13 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%; /* 23.154px */
+
+                @media(max-width: 768px)
+                {
+                    &{
+                        display: none;
+                    }
+                }
             }
             a 
             {
@@ -93,6 +102,20 @@
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
+
+
+                @media(max-width: 768px)
+                {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 12px;
+
+                    a 
+                    {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
         }
     }
 }

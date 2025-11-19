@@ -231,6 +231,14 @@
             font-weight: 400;
             line-height: 132%; /* 21.12px */
             letter-spacing: -0.32px;
+
+            @media(max-width: 768px)
+            {
+                &
+                {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

@@ -10,6 +10,7 @@ import { ImportantListsComponent } from './pages/components/home/important-lists
 import { OurStoresComponent } from './pages/components/home/our-stores/our-stores.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { WhatsAppIconComponent } from './core/components/whats-app-icon/whats-app-icon.component';
+import { HomeComponent } from './pages/components/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -17,12 +18,7 @@ import { WhatsAppIconComponent } from './core/components/whats-app-icon/whats-ap
     RouterOutlet,
     TopInfoBarComponent,
     NavbarComponent,
-    HeroComponent,
-    SalesTeamComponent,
-    DirectContactComponent,
-    ContactUsComponent,
-    ImportantListsComponent,
-    OurStoresComponent,
+    HomeComponent,
     FooterComponent,
     WhatsAppIconComponent,
   ],

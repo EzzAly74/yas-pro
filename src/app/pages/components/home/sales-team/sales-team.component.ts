@@ -20,7 +20,7 @@ export class SalesTeamComponent {
     {
       id: 1,
       image: {
-        src: 'images/sales-team/member2.png',
+        src: 'images/sales-team/osman.png',
         alt: 'عثمان احمد',
         title: 'عثمان احمد',
       },
@@ -41,7 +41,7 @@ export class SalesTeamComponent {
     {
       id: 2,
       image: {
-        src: 'images/sales-team/member1.png',
+        src: 'images/sales-team/esraa.png',
         alt: 'اسراء ايمن',
         title: 'اسراء ايمن',
       },
@@ -62,7 +62,7 @@ export class SalesTeamComponent {
     {
       id: 3,
       image: {
-        src: 'images/sales-team/member3.png',
+        src: 'images/sales-team/manar.png',
         alt: 'مروه عوض',
         title: 'مروه عوض',
       },
@@ -83,7 +83,7 @@ export class SalesTeamComponent {
     {
       id: 4,
       image: {
-        src: 'images/sales-team/member4.png',
+        src: 'images/sales-team/rehab.png',
         alt: 'رحاب ابراهيم',
         title: 'رحاب ابراهيم',
       },
@@ -104,7 +104,7 @@ export class SalesTeamComponent {
     {
       id: 5,
       image: {
-        src: 'images/sales-team/member5.png',
+        src: 'images/sales-team/manar.png',
         alt: 'منار احمد',
         title: 'منار احمد',
       },
@@ -125,7 +125,7 @@ export class SalesTeamComponent {
     {
       id: 6,
       image: {
-        src: 'images/sales-team/member2.png',
+        src: 'images/sales-team/rehab.png',
         alt: 'رحاب فرج',
         title: 'رحاب فرج',
       },
@@ -146,7 +146,7 @@ export class SalesTeamComponent {
     {
       id: 7,
       image: {
-        src: 'images/sales-team/member1.png',
+        src: 'images/sales-team/mariam.png',
         alt: 'مريم محمد',
         title: 'مريم محمد',
       },
@@ -167,7 +167,7 @@ export class SalesTeamComponent {
     {
       id: 8,
       image: {
-        src: 'images/sales-team/member4.png',
+        src: 'images/sales-team/menna.png',
         alt: 'منة عاطف',
         title: 'منة عاطف',
       },
